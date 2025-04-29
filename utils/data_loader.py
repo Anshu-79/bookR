@@ -4,7 +4,8 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 
 # Define paths to datasets
-BOOKS_PATH = "notebooks/dataset/reviews/BX_Books.csv"
+BOOKS1_PATH = "notebooks/dataset/reviews/BX_Books - 1.csv"
+BOOKS2_PATH = "notebooks/dataset/reviews/BX_Books - 2.csv"
 RATINGS_PATH = "notebooks/dataset/reviews/BX-Book-Ratings.csv"
 CLEAN_BOOKS_PATH = "notebooks/dataset/categorical/books_clean.csv"
 
@@ -12,8 +13,8 @@ CLEAN_BOOKS_PATH = "notebooks/dataset/categorical/books_clean.csv"
 @st.cache_data
 def load_books_data():
     try:
-        books_df = pd.read_csv(BOOKS_PATH, sep=";", encoding="latin-1")
-        books_df = books_df[
+        books_df1 = pd.read_csv(BOOKS1_PATH, sep=";", encoding="latin-1")
+        books_df1 = books_df1[
             [
                 "ISBN",
                 "Book-Title",
@@ -23,6 +24,20 @@ def load_books_data():
                 "Image-URL-M",
             ]
         ]
+        books_df2 = pd.read_csv(BOOKS2_PATH, sep=";", encoding="latin-1")
+        books_df2 = books_df2[
+            [
+                "ISBN",
+                "Book-Title",
+                "Book-Author",
+                "Year-Of-Publication",
+                "Publisher",
+                "Image-URL-M",
+            ]
+        ]
+        
+        books_df = pd.concat([books_df1, books_df2], axis=0, ignore_index=True)
+        
         return books_df
     except Exception as e:
         st.error(f"Error loading books data: {e}")

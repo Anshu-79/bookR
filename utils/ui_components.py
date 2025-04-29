@@ -37,7 +37,7 @@ def create_book_card(book, key=None):
 
     rating = f"{rating:.2f}" if isinstance(rating, float) else rating
     weighted_avg = (
-        f"{weighted_avg:.2f}"
+        f"{weighted_avg*100:.2f}%"
         if isinstance(weighted_avg, float) and not math.isnan(weighted_avg)
         else "N/A"
     )

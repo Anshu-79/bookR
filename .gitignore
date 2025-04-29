@@ -1,6 +1,5 @@
-notebooks/dataset/categorical/*
-notebooks/dataset/reviews/*
-
+assets/image_cache/
+utils/__pycache__/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
