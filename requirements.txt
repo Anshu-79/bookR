@@ -1,9 +1,7 @@
-numpy==2.2.5
-pandas==2.2.3
-Pillow==10.1.0
-Pillow==11.2.1
-Requests==2.32.3
+numpy
+pandas
+Pillow
+requests
 scikit-learn
-scipy==1.15.2
-streamlit==1.45.0
-streamlit_searchbox==0.1.22
+scipy
+streamlit_searchbox
