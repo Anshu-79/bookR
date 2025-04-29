@@ -1,13 +1,22 @@
 import pandas as pd
-import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
+import gdown
+
+# BOOKS_URL = "https://drive.google.com/file/d/1yXjlmPe-oGsR80dA0pv--NXfJ2IhxGS5/view?usp=drive_link"
+# RATINGS_URL = "https://drive.google.com/file/d/1Ptcjv8ubrHVQoGQiRjIisM8gHQCsIEbV/view?usp=drive_link"
+# CLEAN_BOOKS_URL = "https://drive.google.com/file/d/1rCMFohq5n2W4uM4PvRSwL85tC3SCbcHC/view?usp=drive_link"
 
 # Define paths to datasets
 BOOKS_PATH = "notebooks/dataset/reviews/BX_Books.csv"
 RATINGS_PATH = "notebooks/dataset/reviews/BX-Book-Ratings.csv"
 CLEAN_BOOKS_PATH = "notebooks/dataset/categorical/books_clean.csv"
+
+
+# gdown.download(BOOKS_URL, BOOKS_PATH, quiet=False)
+# gdown.download(CLEAN_BOOKS_URL, CLEAN_BOOKS_PATH, quiet=False)
+# gdown.download(RATINGS_URL, RATINGS_PATH, quiet=False)
 
 
 @st.cache_data
