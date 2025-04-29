@@ -20,6 +20,7 @@ def get_book_cover(isbn, size='M'):
         return cache_path
     
     open_lib_url = f"https://covers.openlibrary.org/b/isbn/{isbn}-{size}.jpg"
+    print("Fetching", open_lib_url)
     
     try:
         response = requests.head(open_lib_url)
