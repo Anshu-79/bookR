@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+hr {
+    color: #3581B8;
+    flex: 1;
+    border: none;
+    height: 1px;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+}
+
+.stButton button {
+    background-color: white;
+    color: #3581B8;
+    border: solid #3581B8 4px;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: white;
+    color: #FF4B4B;
+}
+
+.stTextInput>div>div>input {
+    border-color: #3581B8;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.stTextInput>label {
+    color: white;
+}
+
+.stSelectbox>div>div>select {
+    border-color: #3581B8;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.stSelectbox>label {
+    color: white;
+}
+
+.book-card {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #3581B8;
+}
+
+.book-card h4 {
+    color: white;
+    margin-top: 0;
+}
+
+.book-card p {
+    color: #CCCCCC;
+    margin-bottom: 0.5rem;
+}
+
+.book-card .author {
+    color: #3581B8;
+    font-style: italic;
+}
+
+.book-card .rating {
+    color: #3581B8;
+    font-weight: bold;
+}
+
+hr {
+    border-color: #333333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: #999999;
+    font-size: 0.8rem;
+}
+
+.streamlit-expanderHeader {
+    background-color: #1E1E1E;
+    color: #3581B8;
+}
+
+.stSpinner>div>div {
+    border-top-color: #3581B8;
+}
