@@ -1,5 +1,5 @@
-# notebooks/dataset/categorical/*
-# notebooks/dataset/reviews/*
+notebooks/dataset/categorical/*
+notebooks/dataset/reviews/*
 
 
 # Byte-compiled / optimized / DLL files
